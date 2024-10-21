@@ -231,7 +231,7 @@ html,body{
         height: 100vh;
         padding: 1vw 2vw;
         flex-direction: column;
-        gap: 13px;
+        gap: 20px;
     }
     .header h1{
         font-size: 1.4rem;
@@ -240,7 +240,7 @@ html,body{
     .subdiv{
         height: 100px;
         flex-direction: column;
-        gap: 13px;
+        gap: 20px;
         /* background-color: red; */
     }
     .subdiv input{
