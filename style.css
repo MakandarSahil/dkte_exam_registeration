@@ -181,6 +181,7 @@ html,body{
         /* backdrop-filter: blur(15px); */
     }
     #page1 .left {
+        margin-top: 100px;
         height: 40%;
         width: 100%;
         /* background-color: pink; */
@@ -225,7 +226,7 @@ html,body{
         height: 100%;
         width: 100vw;
         padding: 1vw 3vw;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
     
     .right #form{
