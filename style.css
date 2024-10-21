@@ -9,29 +9,48 @@ html,body{
     width: 100%;
     /* background-color: #000; */
 }
-#header{
-    height: 9vw;
+
+#navbar{
+    height: 12vh;
     width: 100%;
-    background-color: blue;
+    background-color: #335f8a;
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 5vw;
+    backdrop-filter: blur(14px);
+    align-items: center;
+}
+.dkte-logo{
+    height: 8vh;
+    width: 8vw;
+}
+.contact{
+    height: 5vh;
+    width: 10vw;
+    background-color: #0990F8;
+    /* background-color: #F5C219; */
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 0.5vw;
+    /* display: none; */
 }
 #p1-overlay{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     /* background-color: black; */
     background-image: url(./img/dktepic.avif);
     background-size: cover;
     background-position: 10% 65%;
 }
 #page1{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     background-color: #1c4b79c7;
     /* backdrop-filter: blur(15px); */
-}
-.dkte-logo{
-    height: 100%;
-    width: 8vw;
 }
 #page1 .left {
     height: 100%;
@@ -153,9 +172,9 @@ html,body{
 .school ,.email{
     width: 100%;
 }
-.register, .contact{
+.register{
     height: 90%;
-    width: 50%;
+    width: 100%;
     background-color: #0990F8;
     /* background-color: #F5C219; */
     color: #fff;
@@ -169,6 +188,33 @@ html,body{
 
 
 @media (max-width:900px) {
+    #navbar{
+        height: 12vh;
+        width: 100%;
+        background-color: #335f8a;
+        display: flex;
+        justify-content: space-between;
+        padding: 4vh 5vw;
+        backdrop-filter: blur(14px);
+        align-items: center;
+    }
+    .dkte-logo{
+        height: 50px;
+        width: 80px;
+    }
+    .contact{
+        height: 30px;
+        width: 100px;
+        background-color: #0990F8;
+        /* background-color: #F5C219; */
+        color: #fff;
+        border: none;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        font-weight: 600;
+        border-radius: 0.5vw;
+        /* display: none; */
+    }
     #p1-overlay{
         height: auto;
     }
@@ -262,8 +308,8 @@ html,body{
     .school ,.email{
         width: 100%;
     }
-    .register, .contact{
-        height: 90%;
+    .register{
+        height: 50%;
         width: 100%;
     }
 }
