@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="container">
+        <!--     SIDE AREA -->
+            <div class="sideArea">
+                <div class="avatar">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCNOdyoIXDDBztO_GC8MFLmG_p6lZ2lTDh1ZnxSDawl1TZY_Zw" alt="">
+                    <div class="avatarName">Welcome,<br>John Doe</div>
+                </div>
+                <ul class="sideMenu">
+                    <li><a href=""><span class="fa fa-sitemap"></span>EXAM</a></li>
+                    <li><a href=""><span class="fa fa-money"></span>STUDENT</a></li>
+                </ul>
+            </div>
+        <!--     SIDE AREA -->
+            <div class="mainArea">
+                <!-- BEGIN NAV --> 
+                <nav class="navTop row">
+                    <div class="menuIcon fl"><span class="fa fa-bars"></span></div>
+                    <div class="account fr">
+                        <div class="name has-submenu">Log Out</div>
+                    </div>
+                </nav>
+                <!-- END NAV -->
+                <!-- CONTAINER  -->
+                <div class="mainContent">  
+        <!-- LIST FORM -->
+        <div class="row filterGroup" >
+            <input type="text" class="inputSearch" placeholder="Search">
+        </div>
+        <form action="" method="GET" name="listForm" class="form scrollX">
+            <div class="formHeader row">
+                <h2 class="text-1 fl">Student List</h2>
+            </div>
+            
+            <table class="responstable">
+  
+                <tr>
+                  <th>ID</th>
+                  <th data-th="Driver details"><span>Name</span></th>
+                  <th>School</th>
+                  <th>Mobile</th>
+                  <th>Marks</th>
+                  <th>Rank</th>
+                </tr>
+                
+                <tr>
+                  <td>101</td>
+                  <td>Neeraj Surnis</td>
+                  <td>Vidya Mandir</td>
+                  <td>9322951767</td>
+                  <td>101</td>
+                  <td>1</td>
+                </tr>
+                
+              </table>
+        </form>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,360 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat";
+  /* color: #fff; */
+}
+.bg-1{
+  color: #fff;
+}
+
+/* GRID */
+.row:before, .row:after {
+    content: "";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+[class~="column"] {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .wrap {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+@media (min-width: 481px) {
+    .fl-x {
+        float: left;
+    }
+    .fr-x {
+        float: right;
+    }
+}
+
+@media (min-width: 769px) {
+    .fl-s {
+        float: left;
+    }
+    .fr-s {
+        float: right;
+    }
+}
+
+@media (min-width: 993px) {
+    .fl-m {
+        float: left;
+    }
+    .fr-m {
+        float: right;
+    }
+}
+
+@media (min-width: 1201px) {
+    .fl-l {
+      float: left;
+    }
+    .fr-l {
+      float: right;
+    }
+}
+
+.bg-1 {
+    background: #557daa;
+}
+
+.text-1 {
+    color: #557daa;
+}
+
+
+/*CONTENTS CSS */
+.container {
+    display: flex;
+    display: -webkit-flex;
+    padding-left: 200px;
+    transition: 0.5s;
+}
+.container.is-click {
+    padding-left: 0;
+}
+.avatar {
+    margin: 50px 1em;
+    position: relative;
+    display: table;
+}
+.avatar img {
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+.avatarName {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 1em;
+    color: #fff;
+    line-height: 1.5;
+}
+
+
+/* SIDE CSS */
+.sideArea {
+    width: 200px;
+    min-width: 200px;
+    background: #2A3F54;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.container.is-click .sideArea {
+    left: -200px;
+}
+.sideArea li>a {
+    display: block;
+    color: #fff;
+    padding: 1em;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.sideArea li>a:hover {
+    background: rgba(255,255,255,0.1);
+}
+.sideArea li>a>.fa {
+    width: 1em;
+    text-align: center;
+    margin-right: 10px;
+}
+.submenu {
+    display: none;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.submenu li>a {
+    padding-left: 2em;
+    border-bottom: none;
+}
+.sideMenu {
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+/* MAIN CSS */
+.mainArea {
+    width: 100%;
+    overflow: hidden;
+}
+.navTop {
+    background: #ededed;
+    border-bottom: 1px solid #dedede;
+    padding: 0 1em;
+}
+
+.account {
+    position: relative;
+    padding: 0 1em;
+}
+.name{
+    color: #2A3F54;
+    padding: 1em 0;
+    cursor: pointer;
+}
+.name>span {
+    margin-left: 10px;
+}
+.accountLinks {
+    width: calc(200px - 2em);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #dedede;
+    z-index: 999;
+}
+.accountLinks li {
+    border: none !important;
+}
+.accountLinks li a {
+    display: block;
+    color: #2A3F54;
+    padding: 0.7em 1em;
+}
+.account:hover, .accountLinks li a:hover {
+    background: rgba(42,63,84,0.1);
+}
+
+.mainContent {
+    padding: 20px;
+}
+
+@media (max-width: 768px){
+    .container {
+        padding-left: 0; 
+    }
+    .container .sideArea {
+        left: -200px;
+    }
+    .container.is-click {
+        padding-left: 200px;
+    }
+    .container.is-click .sideArea {
+        left: 0;
+    }
+}
+
+/* ADMIN FORM */
+.form {
+    background: #fff;
+    border: 1px solid #dedede;
+}
+.formHeader {
+    padding: 1em;
+    background: #fff;
+    border-bottom: 1px solid #dedede;
+}
+.formBody {
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+}
+
+.scrollX {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+/* TABLE */
+.responstable-container {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  margin: 1em 0; /* Add margin for spacing */
+}
+
+.responstable {
+  width: 100%;
+  background: #FFF;
+  color: #024457;
+  border-radius: 10px;
+  border: 1px solid #167F92;
+}
+
+.responstable tr {
+  border: 1px solid #D9E4E6; 
+}
+
+.responstable tr:nth-child(odd) {
+  background-color: #EAF3F3;
+}
+
+.responstable th {
+  /* display: none; */
+  border: 1px solid #FFF;
+  background-color: #167F92;
+  color: #FFF;
+  padding: 1em;
+}
+
+.responstable th:first-child {
+  display: table-cell;
+  text-align: center;
+}
+
+.responstable th:nth-child(2) {
+  display: table-cell;
+}
+
+.responstable th:nth-child(2) span {
+  display: none;
+}
+
+.responstable th:nth-child(2):after {
+  content: attr(data-th);
+}
+@media (min-width: 480px) {
+  .responstable th:nth-child(2) span {
+    display: block;
+  }
+  
+  .responstable th:nth-child(2):after {
+    display: none;
+  }
+}
+.responstable td {
+  display: table-cell; /* Keep table structure */
+  word-wrap: break-word;
+  max-width: 7em;
+}
+.responstable td:first-child {
+  text-align: center;
+  border-right: 1px solid #D9E4E6;
+}
+@media (min-width: 480px) {
+  .responstable td {
+    border: 1px solid #D9E4E6;
+  }
+}
+.responstable th, .responstable td {
+  text-align: left;
+  padding: 1em;  
+}
+
+@media (min-width: 480px) {
+  .responstable th, .responstable td {
+    padding: 1em;
+  }
+}
+body {
+  padding: 0 2em;
+  font-family: Arial, sans-serif;
+  color: #024457;
+  background: #f2f2f2;
+}
+
+h1 {
+  font-family: Verdana;
+  font-weight: normal;
+  color: #024457;
+}
+
+h1 span {
+  color: #167F92;
+}
+
+/* FILTER */
+.filterGroup {
+    margin-bottom: 20px;
+}
+
+.filterGroup .inputSearch{
+    padding: 0.8vw 2vw;
+    width: 40%;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 14px;
+    font-size: 0.9rem;
+}
