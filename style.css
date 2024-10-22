@@ -13,12 +13,14 @@ html,body{
 #navbar{
     height: 12vh;
     width: 100%;
-    background-color: #335f8a;
+    /* background-color: #335f8a; */
     display: flex;
     justify-content: space-between;
     padding: 4vh 5vw;
     backdrop-filter: blur(14px);
     align-items: center;
+    position: fixed;
+    top: 0;
 }
 .dkte-logo{
     height: 8vh;
@@ -108,14 +110,6 @@ html,body{
     transform: translate(-50%,-50%);
     border-right: 1px solid #fff;
 }
-#scolorship{
-    position: relative;
-    top: 8%;
-    left: 5%;
-    height: 230px;
-    width: 250px;
-    background-color: red;
-}
 #page1 .right {
     height: 100%;
     width: 43%;
@@ -126,6 +120,7 @@ html,body{
 .right #form{
     height: 100%;
     width: 100%;
+    margin-top: 30px;
     /* background-color: pink; */
     padding: 1vw 2vw;
     display: flex;
@@ -186,12 +181,61 @@ html,body{
     /* display: none; */
 }
 
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: #0990F8;
+    flex-wrap: nowrap;    
+        overflow-x: auto;
+        overflow-y: hidden;
+}
+#divs{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+    /* padding: 2vw 5vw; */
+    /* justify-content: space-between; */
+    /* flex-wrap: nowrap;    
+    overflow-x: auto;
+    overflow-y: hidden; */
+    flex-shrink: 0;
+}
+
+.p2divs{
+    /* flex-shrink: 0; */
+    /* position: absolute; */
+    position: relative;
+    height: 80%;
+    width: 18%;
+    background-color: red;
+    border: 2px solid #000;
+}
+
+.p2divs:nth-last-child(1){
+    
+    top: 16%;
+}
+.p2divs:nth-last-child(2){
+    /* right: 30%; */
+    top: 10%;
+}
+.p2divs:nth-last-child(3){
+    /* right: 50%; */
+    top: 16%;
+}
+.p2divs:nth-last-child(4){
+    /* right: 70%; */
+    top: 10%;
+}
 
 @media (max-width:900px) {
     #navbar{
         height: 12vh;
         width: 100%;
-        background-color: #335f8a;
+        /* background-color: #335f8a; */
         display: flex;
         justify-content: space-between;
         padding: 4vh 5vw;
@@ -235,6 +279,7 @@ html,body{
         padding: 2vw 2vw;
     }
     .left .left-lcontent{
+        margin-top: 100px;
         height: 100%;
         width: 100%;
         padding: 3vw 5vw;
